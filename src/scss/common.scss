@@ -1,0 +1,31 @@
+// 노멀라이징 
+body , ul , li {
+  padding: 0; margin: 0;
+  list-style: none;
+  max-width: 1920px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// 커스텀 color
+$grin: #047651;
+$white: #fff;
+$black: #3c3c3c;
+$red: #ce0e2d;
+$yellow: #ffbb00;
+
+// 커스텀 size
+$s10: 10px;
+$s11: 11px;
+$s12: 12px;
+$s13: 13px;
+$s15: 15px;
+$s24: 24px;
+$s30: 30px;
+$s36: 36px;
+$s48: 48px;
+
+
+
+
