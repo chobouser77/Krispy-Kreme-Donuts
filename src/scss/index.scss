@@ -4,7 +4,7 @@
 
 body{
   position: relative;
-  height: 5000px;
+
   .header{
     position: absolute;
     top: 0;
@@ -348,6 +348,33 @@ body{
         z-index: 10;
       }
 
+    }
+  }
+  .p1s6{
+    padding-top: 300px;
+    padding-bottom: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span:nth-child(1){
+      font-size: $s48;
+      color: $grin;
+    }
+    span:nth-child(2){
+      color:#828282;
+    }
+    .s6-in{
+      padding-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      img:nth-child(1) , img:nth-child(3) {
+        width: 15.6%;
+      }
+      img:nth-child(2) {
+        width: 32.5;
+      }
     }
   }
 }

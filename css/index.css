@@ -13,7 +13,6 @@ a {
 
 body {
   position: relative;
-  height: 5000px;
 }
 body .header {
   position: absolute;
@@ -349,6 +348,33 @@ body .p1s5 .swiper-pagination .swiper-pagination-bullet-active {
   width: 30px !important;
   height: 30px !important;
   z-index: 10;
+}
+body .p1s6 {
+  padding-top: 300px;
+  padding-bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .p1s6 span:nth-child(1) {
+  font-size: 48px;
+  color: #047651;
+}
+body .p1s6 span:nth-child(2) {
+  color: #828282;
+}
+body .p1s6 .s6-in {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+body .p1s6 .s6-in img:nth-child(1), body .p1s6 .s6-in img:nth-child(3) {
+  width: 15.6%;
+}
+body .p1s6 .s6-in img:nth-child(2) {
+  width: 32.5;
 }
 
 /*# sourceMappingURL=index.css.map */
