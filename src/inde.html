@@ -9,18 +9,20 @@
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/hf.css">
   <link rel="stylesheet" href="/css/index.css">
-  <!-- 스와이퍼 -->
+  <!-- Swiper CSS (CDN) -->
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
 
+  <!-- Swiper JS (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
   <!-- 제이쿼리 불러오기 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <sript src="/src/js/common.js"></sript>
-  <sript src="/src/js/index.js"></sript>
+  <script src="/src/js/common.js"></script>
+  <script src="/src/js/index.js"></script>
 
 </head>
 <body>
@@ -55,10 +57,26 @@
     <span>NEW DOUGHNUT</span>
     <span>크리스피크림의 새로운 도넛을 소개합니다!</span>
     <div class="s2-br">
-      <a href="#"><div>허니버터</div><img src="/src/img/p1s2img1.png" alt="s2이미지1"></a>
-      <a href="#"><div>군옥수수</div><img src="/src/img/p1s2img2.png" alt="s2이미지2"></a>
-      <a href="#"><div>마늘빵아몬드</div><img src="/src/img/p1s2img3.png" alt="s2이미지3"></a>
-      <a href="#"><div>쿠키앤크림아몬드</div><img src="/src/img/p1s2img4.png" alt="s2이미지4"></a>
+      <a href="#">
+        <div>허니버터</div>
+        <img src="/src/img/p1s2img1.png" alt="s2이미지1">
+        <img src="/src/img/s2hover1.png" alt="s2이미지1호버" class="h-img">
+      </a>
+      <a href="#">
+        <div>군옥수수</div>
+        <img src="/src/img/p1s2img2.png" alt="s2이미지2">
+        <img src="/src/img/s2hover2.png" alt="s2이미지2호버" class="h-img">
+      </a>
+      <a href="#">
+        <div>마늘빵아몬드</div>
+        <img src="/src/img/p1s2img3.png" alt="s2이미지3">
+        <img src="/src/img/s2hover3.png" alt="s2이미지3호버" class="h-img">
+      </a>
+      <a href="#">
+        <div>쿠키앤크림아몬드</div>
+        <img src="/src/img/p1s2img4.png" alt="s2이미지4">
+        <img src="/src/img/s2hover4.png" alt="s2이미지4호버" class="h-img">
+      </a>
     </div>
   </div>
   <!-- p1s3 -->
@@ -72,21 +90,40 @@
     </div>
     <div class="s3-main">
       <div class="menu">
-        <span>GLAZED</span>
-        <span>CHOCOLATE</span>
-        <span>FILLED</span>
-        <span>COFFEE</span>
-        <span>DRINKS</span>
-        <span>OTHER</span>
+        <div>GLAZED</div>
+        <div>CHOCOLATE</div>
+        <div>FILLED</div>
+        <div>COFFEE</div>
+        <div>DRINKS</div>
+        <div>OTHER</div>
       </div>
       <img src="/src/img/p1s3img1.png" alt="s3-do" class="s3-do">
       <div class="s3-grid">
-        <img src="/src/img/p1s3img2.png" alt="그리드커피이미지1">
-        <img src="/src/img/p1s3img3.png" alt="그리드커피이미지2">
-        <img src="/src/img/p1s3img4.png" alt="그리드커피이미지3">
-        <img src="/src/img/p1s3img5.png" alt="그리드커피이미지4">
-        <img src="/src/img/p1s3img6.png" alt="그리드커피이미지5">
-        <img src="/src/img/p1s3img7.png" alt="그리드커피이미지6">
+        <a href="#">
+          <img src="/src/img/p1s3img2.png" alt="그리드커피이미지1">
+          <img src="/src/img/s3hover1.png" alt="호버" class="h-s3">
+        </a>
+        
+        <a href="#">
+          <img src="/src/img/p1s3img3.png" alt="그리드커피이미지2">
+          <img src="/src/img/s3hover2.png" alt="호버" class="h-s3">
+        </a>
+        <a href="#">
+          <img src="/src/img/p1s3img4.png" alt="그리드커피이미지3">
+          <img src="/src/img/s3hover3.png" alt="호버" class="h-s3">
+        </a>
+        <a href="#">
+          <img src="/src/img/p1s3img5.png" alt="그리드커피이미지4">
+          <img src="/src/img/s3hover4.png" alt="호버" class="h-s3">
+        </a>
+        <a href="#">
+          <img src="/src/img/p1s3img6.png" alt="그리드커피이미지5">
+          <img src="/src/img/s3hover5.png" alt="호버" class="h-s3">
+        </a>
+        <a href="#">
+          <img src="/src/img/p1s3img7.png" alt="그리드커피이미지6">
+          <img src="/src/img/s3hover6.png" alt="호버" class="h-s3">
+        </a>
         <img class="abso" src="/src/img/p1s3img8.png" alt="지붕모양">
       </div>
       <img class="s3-bg" src="/src/img/p1s3img9.png" alt="점무늬">
@@ -108,16 +145,49 @@
   <div class="p1s5">
     <span>EVENT</span>
     <span>크리스피크림의 다양한 혜택과 이벤트 그리고 신제품</span>
-    <div class="s5swiper swiper">
+    <div class="swiper s5swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/src/img/p1s5img1.png" alt="베너1"></div>
-        <div class="swiper-slide"><img src="/src/img/p1s5img2.png" alt="베너2"></div>
-        <div class="swiper-slide"><img src="/src/img/p1s5img3.png" alt="베너3"></div>
-        <div class="swiper-slide"><img src="/src/img/p1s5img1.png" alt="베너4"></div>
-        <div class="swiper-slide"><img src="/src/img/p1s5img1.png" alt="베너5"></div>
+        <div class="swiper-slide">
+          <img src="/src/img/p1s5img1.png" alt="베너1">
+          <div class="h-s5">
+            <span>매월 1·3번째 수요일 오리지널 하프더즌 1+1</span>
+            <span>2021.07.13~2999.07.13</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/img/p1s5img2.png" alt="베너2">
+          <div class="h-s5">
+            <span>크리스피크림 도넛 ♨HOT NOW♨</span>
+            <span>2023.07.11~2999.12.31</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/img/p1s5img3.png" alt="베너3">
+          <div class="h-s5">
+            <span>바프컬랙션 신제품 출시</span>
+            <span>2024.10.01~2024.11.14</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/img/p1s5img1.png" alt="베너4">
+          <div class="h-s5">
+            <span>크리스피크림 도넛 ♨HOT NOW♨</span>
+            <span>2023.07.11~2999.12.31</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/img/p1s5img1.png" alt="베너5">
+          <div class="h-s5">
+            <span>크리스피크림 도넛 ♨HOT NOW♨</span>
+            <span>2023.07.11~2999.12.31</span>
+          </div>
+        </div>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
+      <div class="left-op"></div>
+      <div class="right-op"></div>
+    </div> 
+    <div class="swiper-pagination"></div>  
+    
   </div>
   
   <!-- footer -->
