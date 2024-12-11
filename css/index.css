@@ -43,11 +43,34 @@ body .p1s1 .donut {
   left: 0%;
   width: 20%;
 }
-body .p1s1 a {
+body .p1s1 .baner {
   z-index: 5;
+  width: 1280px;
+}
+@media (max-width: 1280px) {
+  body .p1s1 .baner {
+    width: 800px;
+  }
+}
+@media (max-width: 768px) {
+  body .p1s1 .baner {
+    display: none;
+  }
+}
+body .p1s1 .baner img {
+  width: 100%;
+}
+body .p1s1 .mo-baner {
+  display: none;
+}
+@media (max-width: 768px) {
+  body .p1s1 .mo-baner {
+    display: flex;
+  }
 }
 body .p1s2 {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   padding-top: 150px;
@@ -99,6 +122,88 @@ body .p1s2 .s2-br a:hover .h-img {
   top: 0;
   left: 0;
 }
+body .p1s2 .s2-br-mo {
+  padding-top: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  position: relative;
+  overflow-y: auto;
+  z-index: 5;
+}
+body .p1s2 .s2-br-mo .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 50;
+}
+body .p1s2 .s2-br-mo .swiper-wrapper .swiper-slide {
+  width: 230px;
+  height: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .p1s2 .s2-br-mo .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: calc(100% - 16px);
+}
+body .p1s2 .s2-br-mo .swiper-wrapper .swiper-slide div {
+  position: absolute;
+  background-color: #047651;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  bottom: 0;
+}
+body .p1s2 .swp1 {
+  top: 82%;
+  width: 100%;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+body .p1s2 .swiper-pagination-bullet {
+  margin: 0 15px;
+  width: 7px !important; /* 도트 크기 */
+  height: 7px !important; /* 도트 높이 */
+  background-color: #ffbb00 !important; /* 기본 도트 색상 */
+  border-radius: 50% !important; /* 원형으로 만들기 */
+  opacity: 1 !important;
+  z-index: 99;
+}
+body .p1s2 .swiper-pagination-bullet-active {
+  background-color: white !important;
+  background-image: url("/src/img/swiperdot.png");
+  width: 30px !important;
+  height: 30px !important;
+  z-index: 100;
+}
+@media (max-width: 768px) {
+  body .p1s2 {
+    height: 500px;
+  }
+  body .p1s2 span:nth-child(1) {
+    font-size: 24px;
+  }
+  body .p1s2 span:nth-child(2) {
+    font-size: 8px;
+  }
+  body .p1s2 .s2-br {
+    display: none;
+  }
+  body .p1s2 .s2-br-mo {
+    display: flex;
+  }
+  body .p1s2 .swiper-pagination {
+    display: flex;
+  }
+}
 body .p1s3 {
   display: flex;
   flex-direction: column;
@@ -114,6 +219,7 @@ body .p1s3 .s3-bar {
 }
 body .p1s3 .s3-bar .border {
   position: absolute;
+  top: 50%;
   width: 100%;
   height: 5px;
   background-color: #047651;
@@ -178,6 +284,9 @@ body .p1s3 .s3-main .s3-do {
   max-height: 400px;
   max-height: 400px;
 }
+body .p1s3 .s3-main .s3img2 {
+  display: none;
+}
 body .p1s3 .s3-main .s3-grid {
   position: relative;
   padding-left: 40px;
@@ -209,6 +318,25 @@ body .p1s3 .s3-main .s3-grid .abso {
   top: -25%;
   left: calc(50% - 125px);
 }
+body .p1s3 .s3-main .s3-mo-sw {
+  display: none;
+  padding: 50px;
+  width: 100%;
+  height: 100px;
+}
+body .p1s3 .s3-main .s3-mo-sw .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+body .p1s3 .s3-main .s3-mo-sw .swiper-wrapper .swiper-slide {
+  width: 100px;
+  height: 100px;
+}
+body .p1s3 .s3-main .s3-mo-sw .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
 body .p1s3 .s3-main .s3-bg {
   position: absolute;
   width: 100%;
@@ -216,6 +344,55 @@ body .p1s3 .s3-main .s3-bg {
   top: 70%;
   left: 0;
   z-index: -1;
+}
+@media (max-width: 768px) {
+  body .p1s3 .bar {
+    width: 223px !important;
+    height: 36px !important;
+  }
+  body .p1s3 .bar .bar-in {
+    width: 70px !important;
+    height: 14px !important;
+    font-size: 11px;
+    top: calc(100% - 6px) !important;
+  }
+  body .p1s3 .bar span {
+    font-size: 20px !important;
+  }
+  body .p1s3 .s3-main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body .p1s3 .s3-main .menu {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    font-size: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  body .p1s3 .s3-main .menu div {
+    display: flex;
+    justify-content: center;
+  }
+  body .p1s3 .s3-main .s3img1 {
+    display: none !important;
+  }
+  body .p1s3 .s3-main .s3img2 {
+    display: flex !important;
+  }
+  body .p1s3 .s3-main .s3-grid {
+    display: none;
+  }
+  body .p1s3 .s3-main .s3-mo-sw {
+    display: flex;
+  }
+  body .p1s3 .s3-main .s3-bg {
+    top: 80%;
+  }
 }
 body .p1s4 {
   padding-top: 300px;
@@ -230,6 +407,7 @@ body .p1s4 .s4-bg {
   top: calc(0% + 300px);
   left: 0;
   width: 100%;
+  height: 65%;
   z-index: -1;
 }
 body .p1s4 .imgs {
@@ -243,8 +421,9 @@ body .p1s4 .imgs {
 }
 body .p1s4 .donuts {
   position: absolute;
-  top: calc(100% - 85px);
+  top: 97%;
   z-index: -2;
+  width: 100%;
 }
 body .p1s5 {
   position: relative;
@@ -332,6 +511,7 @@ body .p1s5 .swiper-pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
   /* 기본 도트 스타일 */
 }
 body .p1s5 .swiper-pagination .swiper-pagination-bullet {
@@ -347,7 +527,7 @@ body .p1s5 .swiper-pagination .swiper-pagination-bullet-active {
   background-image: url("/src/img/swiperdot.png");
   width: 30px !important;
   height: 30px !important;
-  z-index: 10;
+  z-index: 100;
 }
 body .p1s6 {
   padding-top: 300px;

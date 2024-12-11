@@ -22,6 +22,7 @@
   <!-- 제이쿼리 불러오기 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="/src/js/common.js"></script>
+  <script src="/src/js/hf.js"></script>
   <script src="/src/js/index.js"></script>
 
 </head>
@@ -45,12 +46,38 @@
     <a href="/" class="logo">
       <img src="/src/img/top_logo.png" alt="탑바 로고">
     </a>
+    <div class="mo-bar"></div>
   </div>
+  <div id="mo-header">
+    <button><img src="/src/img/mo_topbar.png" alt="모바일토글버튼"></button>
+  </div>
+  <!-- side bar -->
+   <div id="side-bar">
+    <img class="bread" src="/src/img/sideimg1.png" alt="사이드바 이미지">
+    <div class="font">
+      크리스피크림 도넛 매장에<br>
+      <span>HOT NOW</span> 사인이 켜지면<br>
+      갓 나온 따듯한<br>
+      <span>오리지널 글레이즈드</span>를<br>
+      만나볼 수 있어요!<br>
+      <span>(도넛 1개 무료 증정)</span>
+      <div>
+        HOT NOW<br>
+        운영 매장 시간 안내
+      </div>
+    </div>
+    <div class="up-down">
+      <div id="up"><img src="/src/img/sideup.png" alt="업버튼"></div>
+      <div id="down"><img src="/src/img/sidedown.png" alt="다운버튼"></div>
+    </div>
+    <img class="mark1" src="/src/img/mark1.png" alt="모바일 사이드바 이미지">
+   </div>
   <!-- p1s1 -->
   <div class="p1s1">
     <img class="s1img mark" src="/src/img/p1s1img1.png" alt="마크">
     <img class="s1img donut" src="/src/img/p1s1img3.png" alt="도넛">
-    <a href="#"><img src="/src/img/p1s1img2.png" alt="가운데 베너"></a>
+    <div class="baner"><img src="/src/img/p1s1img2.png" alt="가운데 베너"></div>
+    <div class="mo-baner"><img src="/src/img/p1s1img1mo.png" alt="가운데 베너"></div>
   </div>
   <!-- p1s2 -->
   <div class="p1s2">
@@ -78,6 +105,27 @@
         <img src="/src/img/s2hover4.png" alt="s2이미지4호버" class="h-img">
       </a>
     </div>
+    <div class="swiper s2-br-mo">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/src/img/p1s2img1.png" alt="허니버터">
+          <div>허니버터</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/img/p1s2img2.png" alt="군옥수수">
+          <div>군옥수수</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/img/p1s2img3.png" alt="마늘빵아몬드">
+          <div>마늘빵아몬드</div>
+        </div>    
+        <div class="swiper-slide">
+          <img src="/src/img/p1s2img4.png" alt="쿠키앤크림아몬드">
+          <div>쿠키앤크림아몬드</div>
+        </div>      
+      </div> 
+    </div>
+    <div class="swiper-pagination swp1"></div>   
   </div>
   <!-- p1s3 -->
   <div class="p1s3">
@@ -97,13 +145,13 @@
         <div>DRINKS</div>
         <div>OTHER</div>
       </div>
-      <img src="/src/img/p1s3img1.png" alt="s3-do" class="s3-do">
+      <img src="/src/img/p1s3img1.png" alt="s3-do" class="s3-do s3img1">
+      <img src="/src/img/p1s3img1_2.png" alt="s3-do" class=" s3img2">
       <div class="s3-grid">
         <a href="#">
           <img src="/src/img/p1s3img2.png" alt="그리드커피이미지1">
           <img src="/src/img/s3hover1.png" alt="호버" class="h-s3">
-        </a>
-        
+        </a> 
         <a href="#">
           <img src="/src/img/p1s3img3.png" alt="그리드커피이미지2">
           <img src="/src/img/s3hover2.png" alt="호버" class="h-s3">
@@ -125,6 +173,29 @@
           <img src="/src/img/s3hover6.png" alt="호버" class="h-s3">
         </a>
         <img class="abso" src="/src/img/p1s3img8.png" alt="지붕모양">
+      </div>
+      <div class="swiper s3-mo-sw">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide">
+            <img src="/src/img/p1s3img2.png" alt="그리드커피이미지1">
+          </a>
+          <a href="#" class="swiper-slide">
+            <img src="/src/img/p1s3img3.png" alt="그리드커피이미지2">
+          </a>
+          <a href="#" class="swiper-slide">
+            <img src="/src/img/p1s3img4.png" alt="그리드커피이미지3">
+          </a>
+          <a href="#" class="swiper-slide">
+            <img src="/src/img/p1s3img5.png" alt="그리드커피이미지4">
+          </a>
+          <a href="#" class="swiper-slide">
+            <img src="/src/img/p1s3img6.png" alt="그리드커피이미지5">
+          </a>
+          <a href="#" class="swiper-slide">
+            <img src="/src/img/p1s3img7.png" alt="그리드커피이미지6">
+          </a>
+              
+        </div> 
       </div>
       <img class="s3-bg" src="/src/img/p1s3img9.png" alt="점무늬">
     </div>
@@ -186,8 +257,7 @@
       <div class="left-op"></div>
       <div class="right-op"></div>
     </div> 
-    <div class="swiper-pagination"></div>  
-    
+    <div class="swiper-pagination swp2"></div>  
   </div>
   <!-- p1s6 -->
   <div class="p1s6">
