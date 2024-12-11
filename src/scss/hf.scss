@@ -8,6 +8,7 @@
   justify-content: center;
   gap: 15%;
   background-color: $grin;
+  z-index: 50;
   nav {
     color: $white;
     margin-right: 5%;
@@ -45,5 +46,126 @@
   }
 }
 #footer{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+  padding-top: 1rem;
+  align-items: center;
   background-color: $grin;
+  .f-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    nav{
+      padding-right: 12px;
+      ul {
+        display: flex;
+        gap: 12px;
+        li {
+          a {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .f-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    padding-bottom: 125px;
+    position: relative;
+    // align-items: center;
+    .b1 {
+      display: flex;
+      gap: 8px;
+      a , span {
+        color: $white;
+        font-size: $s12;
+      }
+    }
+    .b2 {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      span {
+        font-size: $s12;
+        color: $white;
+      }
+      nav {
+        ul {
+          gap: 8px;
+          display: flex;
+          li {
+        
+            a {
+              border-radius: 3px;
+              background-color: #dde0e3;
+              color: $grin;
+              font-size: $s12;
+              padding: 7px 12px;
+            }
+
+          }
+        }
+      }
+    }
+    .b3 , .b4{
+      display: flex;
+      gap: 30px;
+      span.b3-1 {
+        font-size: $s12;
+        color: $white;
+      }
+      div {
+        width: 700px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        span , a {
+          font-size: $s11;
+          color: $white;
+        }
+        a {
+          text-decoration: underline;
+        }
+      }
+
+    }
+    .b5 {
+      span {
+        font-size: $s12;
+        color: $white;
+      }
+    }
+    .dot {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+      background-color: #ffffff70;
+      border: 1px solid #dde0e3;
+      box-sizing: border-box;
+      span {
+        font-size: $s13;
+        color: $grin;
+      }
+    }
+  }
 }
