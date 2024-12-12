@@ -11,7 +11,7 @@
   z-index: 50;
   nav {
     color: $white;
-    margin-right: 5%;
+    margin-left: 5%;
     ul {
       display: flex;
       li {
@@ -35,7 +35,7 @@
   }
   .logo{
     position: absolute;
-    top: 15%;
+    bottom: -45%;
     width: 15%;
     img {
       width: 100%;

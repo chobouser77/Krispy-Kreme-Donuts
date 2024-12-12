@@ -23,7 +23,7 @@ a {
 }
 #header nav {
   color: #fff;
-  margin-right: 5%;
+  margin-left: 5%;
 }
 #header nav ul {
   display: flex;
@@ -45,7 +45,7 @@ a {
 }
 #header .logo {
   position: absolute;
-  top: 15%;
+  bottom: -45%;
   width: 15%;
 }
 #header .logo img {
