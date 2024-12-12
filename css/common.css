@@ -3,6 +3,7 @@ body, ul, li {
   margin: 0;
   list-style: none;
   max-width: 1920px;
+  overflow-x: hidden;
 }
 
 a {

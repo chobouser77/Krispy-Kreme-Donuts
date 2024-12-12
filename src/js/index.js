@@ -19,25 +19,18 @@ $(document).ready(function (){
       slidesPerView: "auto",
       spaceBetween: 300,
       centeredSlides: true,
-    });
-    var swiper1 = new Swiper(".s5swiper", {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 30,
-      loop: true,
-    });
+    });  
   }
-  if ($(window).width() >= 768) {
-    var swiper1 = new Swiper(".s5swiper", {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swp2",
-        clickable: true,
-           type: 'bullets',
-      },
-      loop: true,
-    });
-  }
+
+  var swiper1 = new Swiper(".s5swiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swp2",
+      clickable: true,
+      type: 'bullets',
+    },
+    loop: true,
+  });
 });
