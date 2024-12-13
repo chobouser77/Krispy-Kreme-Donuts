@@ -4,7 +4,50 @@
 body{
   width: 100%;
   .s1 {
-    width: 100%;
-    height: 1000px;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-content: center;    
+    padding: 100px 18%;
+    box-sizing: border-box;
+    .s1text{
+      font-size: $s48;
+      color: $grin;    
+      padding-bottom: 50px;
+      width: 100%;
+      text-align: center;  
+    }
+    .s1-button-area{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;      
+      .s1bt{
+        text-wrap: nowrap;
+        box-sizing: border-box;
+        border-radius: 30px;
+        color: $black;
+        font-size: $s30;
+        background: none;
+        border: none;
+      }
+      .s1bt.active{
+        color: $red;
+      }
+      &::after {
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      content: "";
+      background-color: $grin;
+      }
+    }
+    
+    .product {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
