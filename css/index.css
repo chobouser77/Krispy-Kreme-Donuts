@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "KorailRoundGothicBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "KorailRoundGothicBold", sans-serif;
+}
+
 body, ul, li {
   padding: 0;
   margin: 0;
@@ -398,6 +408,11 @@ body .p1s3 .s3-main .s3-bg {
 body .null {
   width: 100%;
   height: 200px;
+}
+@media (max-width: 768px) {
+  body .null {
+    display: none;
+  }
 }
 body .p1s4 {
   padding-top: 300px;
