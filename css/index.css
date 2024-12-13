@@ -220,6 +220,7 @@ body .p1s3 {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 body .p1s3 .s3-bar {
   position: relative;

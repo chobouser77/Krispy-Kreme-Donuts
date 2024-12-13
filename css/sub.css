@@ -23,6 +23,7 @@ a {
 
 body {
   width: 100%;
+  position: relative;
 }
 body .s1 {
   width: 100%;
