@@ -437,8 +437,10 @@ body .p1s4 .imgs {
 body .p1s4 .donuts {
   position: absolute;
   top: calc(80% - 40px);
-  z-index: -2;
+  z-index: -2 !important;
   width: 100%;
+  transition: opacity 1s ease;
+  transition-delay: 1s;
 }
 body .p1s4 .s4-mo {
   display: none;
@@ -714,7 +716,15 @@ body .p1s6 .s6-in img:nth-child(3) {
   transition: opacity 1s ease;
 }
 
+[data-ani=opacity] .donuts {
+  opacity: 0 !important;
+}
+
 [data-ani=opacity].animate {
+  opacity: 1 !important;
+}
+
+[data-ani=opacity].animate .donuts {
   opacity: 1 !important;
 }
 

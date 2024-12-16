@@ -401,6 +401,7 @@ body{
     background-image: url(/src/img/p1s4img1.png);
     background-position: center;
     background-repeat: no-repeat;
+    // z-index: ;
     .imgs{
       width: 100%;
       height: 100%;
@@ -413,8 +414,10 @@ body{
     .donuts{
       position: absolute;
       top: calc(80% - 40px);
-      z-index: -2;
-      width: 100%;
+      z-index: -2 !important;
+      width: 100%;      
+      transition: opacity 1s ease;
+      transition-delay: 1s;
     }
     .s4-mo{
       display: none;
@@ -695,6 +698,12 @@ body{
   opacity: 0;
   transition: opacity 1s ease ;
 }
+[data-ani="opacity"] .donuts {
+  opacity: 0 !important;
+}
 [data-ani="opacity"].animate {
+  opacity: 1 !important;
+}
+[data-ani="opacity"].animate .donuts {
   opacity: 1 !important;
 }

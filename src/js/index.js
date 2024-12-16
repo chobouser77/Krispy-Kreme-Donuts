@@ -4,21 +4,28 @@ $(document).ready(function (){
       slidesPerView: "auto",
       spaceBetween: 30,
       centeredSlides: true,
+      // loop: true, // 루프 설정
+      freeMode: true, // 슬라이드가 자동으로 넘어가게 함
+      speed: 600, // 슬라이드 이동 속도
+      touchRatio: 1.5, // 슬라이드가 더 부드럽게 이동하도록 비율 조정
       pagination: {
         el: ".swp1",
         clickable: true,
         type: 'bullets',
-      },
+      },      
     });
+    
     var moswiper2 = new Swiper(".s3-mo-sw", {
       slidesPerView: "auto",
       spaceBetween: 30,
       centeredSlides: true,
+      bounceEffect: true,
     });
     var moswiper3 = new Swiper(".s4-mo", {
       slidesPerView: "auto",
       spaceBetween: 300,
       centeredSlides: true,
+      bounceEffect: true,
     });  
   }
 
