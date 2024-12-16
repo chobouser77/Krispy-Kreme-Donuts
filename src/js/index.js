@@ -33,4 +33,23 @@ $(document).ready(function (){
     },
     loop: true,
   });
+  function opscroll() {
+    const opani = $('[data-ani="opacity"]');
+    const windowHeight = window.innerHeight; // windowHeight를 정의해야 합니다.
+  
+    opani.each(function() {
+      var rect = this.getBoundingClientRect();
+  
+      // 요소의 상단이 화면 중간에 도달하면 'animate' 클래스 추가
+      if (rect.top <= windowHeight / 2) {
+        $(this).addClass('animate');
+      } else {
+        $(this).removeClass('animate');
+      }
+    });
+  }
+  $(window).on('scroll', opscroll);
+  $(document).ready(function() {
+    opscroll();
+  });  
 });

@@ -706,4 +706,13 @@ body .p1s6 .s6-in img:nth-child(3) {
   }
 }
 
+[data-ani=opacity] {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+[data-ani=opacity].animate {
+  opacity: 1 !important;
+}
+
 /*# sourceMappingURL=index.css.map */
