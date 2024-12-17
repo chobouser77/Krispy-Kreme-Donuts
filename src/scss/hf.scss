@@ -423,21 +423,24 @@
     }
     div {
       position: absolute;
+      line-height: 15px;
       top: calc(100% - 22px);
-      left: calc(50% - 63px);
+      left: calc(50% - 72px);
       background-color: $red;
-      padding: 20px 8px;
+      padding: 10px 20px;
       border-radius: 30px;
       color: $white;
-      font-size: $s12;   
-      box-shadow: 2px 2px 5px black;
+      font-size: $s14;        
+      span {
+        font-size: $s12; 
+      }
     }
   }
   .up-down {
-    padding-top: 75px;
+    padding-top: 36px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 16px;
     position: relative;
     #up , #down {
       img {
