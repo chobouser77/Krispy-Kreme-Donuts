@@ -1,11 +1,24 @@
 @font-face {
-  font-family: "KorailRoundGothicBold";
+  font-family: "KorailRoundGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KorailRoundGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KorailRoundGothic";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 * {
-  font-family: "KorailRoundGothicBold", sans-serif;
+  font-family: "KorailRoundGothic", sans-serif;
+  font-weight: 700;
 }
 
 body, ul, li {
@@ -102,7 +115,7 @@ a {
 #header .logo {
   position: absolute;
   bottom: -45%;
-  width: 15%;
+  width: 16%;
 }
 #header .logo img {
   width: 100%;
@@ -411,15 +424,16 @@ a {
   box-sizing: border-box;
   padding-top: 25%;
   line-height: 25px;
+  font-weight: 400;
 }
 #side-bar div.font .red {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700 !important;
   color: #ce0e2d;
 }
 #side-bar div.font .grin {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700 !important;
   color: #047651;
 }
 #side-bar div.font .rg {
@@ -450,6 +464,15 @@ a {
 #side-bar .up-down #up img, #side-bar .up-down #down img {
   width: 48px;
   height: 48px;
+}
+#side-bar .up-down #up .hov, #side-bar .up-down #down .hov {
+  display: none;
+}
+#side-bar .up-down #up:hover .nomal, #side-bar .up-down #down:hover .nomal {
+  display: none;
+}
+#side-bar .up-down #up:hover .hov, #side-bar .up-down #down:hover .hov {
+  display: flex;
 }
 #side-bar .mark1 {
   display: none;

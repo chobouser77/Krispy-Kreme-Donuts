@@ -87,6 +87,10 @@ body{
         font-size: $s24;
         img {
           width: 100%;
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
         }
         .best-icon , .new-icon{
           position: absolute;

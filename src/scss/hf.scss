@@ -84,7 +84,7 @@
   .logo{
     position: absolute;
     bottom: -45%;
-    width: 15%;
+    width: 16%;
     img {
       width: 100%;
       // width: 292px;
@@ -406,14 +406,15 @@
     box-sizing: border-box;
     padding-top: 25%;
     line-height: 25px;
+    font-weight: 400;
     .red{
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 700 !important;
       color: $red;
     }
     .grin{
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 700 !important;
       color: $grin;
     }
     .rg{
@@ -445,6 +446,17 @@
       img {
         width: 48px ;
         height: 48px;
+      }
+      .hov{
+        display: none;
+      }
+      &:hover{
+        .nomal {
+          display: none;
+        }
+        .hov {
+          display: flex;
+        }
       }
     }
   }

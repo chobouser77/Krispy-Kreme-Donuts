@@ -3,27 +3,29 @@
 body{
   position: relative;
 
-  .header{
+  #header{
     position: absolute;
     top: 0;
     left: 0;
-    background: none;
+    background-color: transparent !important;
     z-index: 10;
   }
   .p1s1{
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     background-color: $grin;
+    padding-top: 91px;
     width: 100%;
     height: 821px;
+    overflow: visible;
     .s1img {
       position: absolute;
     }
     .mark{
       width: 22%;
-      left: 1%;
+      left: -1%;
       top : 5%;
     }
     .donut{
@@ -249,17 +251,23 @@ body{
         padding: 50px;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         gap: 25px;
         color: $grin;
         font-size: $s30;
         div {
-          padding: 5px;
-          padding-right: 10px;
+          width: auto;
+          height: 65px;
+          display: inline-flex;          
+          align-items: center;
+          padding: 10px 10px;
+          padding-right: 25px;
+          box-sizing: border-box;
           &:hover {
             color: $white;
             background-color: $grin;
-            border-top-right-radius: 20px;   /* 오른쪽 상단 모서리 */
-            border-bottom-right-radius: 20px;
+            border-top-right-radius: 40px;   /* 오른쪽 상단 모서리 */
+            border-bottom-right-radius: 40px;
           }
         }
       }
