@@ -1,11 +1,64 @@
 [
   { 
-    "id": 1, "name": "오리지널 글레이즈드 더즌", "price": 17000 ,
-    "tags": ["Best", "DonutheZone"], "image" : "/scr/img/sub_img/" 
+    "id": 1, "name": "오리지널 글레이즈드", "price": 1800 ,
+    "tags": ["Best", "Donut"], "image" : "/src/img/sub_img/do_one_img1.png" 
   },
   { 
-    "id": 2, "name": "오리지널 글레이즈드 하프더즌", "price": 10800 ,
-    "tags": ["Best", "DonutheZone"], "image" : "/scr/img/sub_img/" 
+    "id": 2, "name": "초코홀릭", "price": 1900 ,
+    "tags": ["Best", "Donut"], "image" : "/src/img/sub_img/do_one_img2.png" 
   },
+  { 
+    "id": 3, "name": "초콜릿 아이스드 글레이즈드", "price": 1900 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img3.png" 
+  },
+  { 
+    "id": 4, "name": "허니버터", "price": 3400 ,
+    "tags": ["New", "Donut"], "image" : "/src/img/sub_img/do_one_img4.png" 
+  },
+  { 
+    "id": 5, "name": "군 옥수수", "price": 3400 ,
+    "tags": ["New", "Donut"], "image" : "/src/img/sub_img/do_one_img5.png" 
+  },
+  { 
+    "id": 6, "name": "마늘빵아몬드", "price": 3000 ,
+    "tags": ["New", "Donut"], "image" : "/src/img/sub_img/do_one_img6.png" 
+  },
+  { 
+    "id": 7, "name": "쿠키앤크림아몬드", "price": 3000 ,
+    "tags": ["Best", "Donut"], "image" : "/src/img/sub_img/do_one_img7.png" 
+  },
+  { 
+    "id": 8, "name": "우유크림 듬뿍", "price": 2000 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img8.png" 
+  },
+  { 
+    "id": 9, "name": "초코 우유크림 듬뿍", "price": 2200 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img9.png" 
+  },
+  { 
+    "id": 10, "name": "슈거 코티드", "price": 1700 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img10.png" 
+  },
+  { 
+    "id": 11, "name": "뉴욕 치즈케익", "price": 2200 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img11.png" 
+  },
+  { 
+    "id": 12, "name": "글레이즈드 샤워크림", "price": 1900 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img12.png" 
+  },
+  { 
+    "id": 13, "name": "글레이즈드 초콜릿 크림", "price": 1900 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img13.png" 
+  },
+  { 
+    "id": 14, "name": "로토스 비스코프 도넛", "price": 2200 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img14.png" 
+  },
+  { 
+    "id": 15, "name": "프리미엄 스트로베리 필드", "price": 2200 ,
+    "tags": ["Donut"], "image" : "/src/img/sub_img/do_one_img15.png" 
+  }
+
 
 ]
