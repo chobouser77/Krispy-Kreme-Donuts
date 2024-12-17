@@ -393,30 +393,31 @@
   img.bread {
     position: absolute;
     top : -220px;
-    z-index: 51;
-    
+    z-index: 51;    
   }
   div.font {
     text-align: center;
     position: relative;
+    border: 5px solid $grin;
     box-shadow: 2px 2px 5px black;
     width: 225px;
     height: 256px;
     background-color: $white;
     border-radius: 30px;
     box-sizing: border-box;
-    padding-top: 30%;
-    span:nth-child(1){
+    padding-top: 25%;
+    line-height: 25px;
+    .red{
       font-size: 18px;
       font-weight: 500;
       color: $red;
     }
-    span:nth-child(2){
+    .grin{
       font-size: 18px;
       font-weight: 500;
       color: $grin;
     }
-    span:nth-child(3){
+    .rg{
       font-size: $s12;
       color: $red;
     }
