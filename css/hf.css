@@ -490,6 +490,10 @@ a {
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5647058824);
   z-index: 100;
+  align-items: center;
+}
+.pop-up.s5p {
+  align-items: start !important;
 }
 .pop-up .img-area {
   width: auto;
