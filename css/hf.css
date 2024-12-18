@@ -509,6 +509,57 @@ a {
 .pop-up .img-area.side .x-mark {
   position: n;
 }
+.pop-up .bread-area {
+  background-color: #047651;
+  width: 246px;
+  height: 331px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 16px;
+}
+.pop-up .bread-area .name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #fff;
+}
+.pop-up .bread-area .name span {
+  font-size: 20px;
+}
+.pop-up .bread-area .name .x-mark {
+  position: relative;
+}
+.pop-up .bread-area span.text {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+.pop-up .bread-area .bt-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pop-up .bread-area .bt-area button {
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.pop-up .bread-area .bt-area button img {
+  height: 100%;
+  width: 40px;
+}
+.pop-up .bread-area .bt-area span {
+  font-size: 20px;
+  color: #fff;
+}
 .pop-up.show {
   display: flex;
 }

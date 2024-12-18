@@ -274,11 +274,14 @@ body{
           padding: 10px 10px;
           padding-right: 25px;
           box-sizing: border-box;
+          background-color: $white;
+          border-top-right-radius: 40px; 
+          border-bottom-right-radius: 40px;
+          transition: background-color 0.5s ease-in-out , color 0.5s ease-in-out;
           &:hover {
             color: $white;
             background-color: $grin;
-            border-top-right-radius: 40px;   /* 오른쪽 상단 모서리 */
-            border-bottom-right-radius: 40px;
+            
           }
         }
       }
