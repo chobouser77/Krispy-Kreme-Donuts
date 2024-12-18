@@ -1,18 +1,6 @@
 @font-face {
   font-family: "KorailRoundGothic";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicLight.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "KorailRoundGothic";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "KorailRoundGothic";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -61,9 +49,8 @@ body .s1 .s1-button-area {
 }
 body .s1 .s1-button-area .s1bt {
   position: relative;
-  padding: 0px 12px;
+  padding: 0px 50px;
   text-wrap: nowrap;
-  border-radius: 30px 30px 0 0;
   height: 75px;
   color: #3c3c3c;
   font-size: 30px;
@@ -74,9 +61,28 @@ body .s1 .s1-button-area .s1bt.active {
   color: #ce0e2d;
   background-color: #fff;
   z-index: 10;
-  border-top: 5px solid #047651;
-  border-left: 5px solid #047651;
-  border-right: 5px solid #047651;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+body .s1 .s1-button-area .best.active {
+  background-image: url(/src/img/sub_ka_img/best.png);
+  padding-left: 30px;
+  padding-right: 70px;
+}
+body .s1 .s1-button-area .do.active {
+  background-image: url(/src/img/sub_ka_img/do.png);
+}
+body .s1 .s1-button-area .dothe.active {
+  background-image: url(/src/img/sub_ka_img/dothe.png);
+}
+body .s1 .s1-button-area .coffee.active {
+  background-image: url(/src/img/sub_ka_img/coffee.png);
+}
+body .s1 .s1-button-area .non-coffee.active {
+  background-image: url(/src/img/sub_ka_img/noncoffee.png);
+  padding-left: 70px;
+  padding-right: 30px;
 }
 body .s1 .s1-button-area::after {
   position: absolute;
