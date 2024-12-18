@@ -488,7 +488,7 @@ a {
   padding: 10% 20%;
   justify-content: center;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.1882352941);
+  background-color: rgba(0, 0, 0, 0.5647058824);
   z-index: 100;
 }
 .pop-up .img-area {
